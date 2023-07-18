@@ -1,0 +1,178 @@
+/* body, h1, h2, h3, h4, p{
+
+    margin: 0px;
+} */
+
+/* Shared styles */
+
+.btn-primary-pink {
+    background-color: #E02C6D;
+    color: #ffffff;
+    height: 2.5rem;
+    width: 10.25rem;
+    border-radius: 1.875rem;
+    border: none;
+    margin-right: 5px;
+}
+
+.btn-primary-blue {
+    border-radius: 48px;
+    background: #4EC5F7;
+    color: #ffffff;
+    height: 2.5rem;
+    width: 10.25rem;
+    border-radius: 1.875rem;
+    border: none;
+}
+
+
+/* Nav styles stars */
+
+.nav-bar {
+    height: 130px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 15px;
+}
+
+.nav-icon {
+    border: 1px solid red;
+    text-align: center;
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-icon img {
+    height: 50px;
+}
+
+.nav-title {
+    font-size: 50px;
+}
+
+
+
+.nav-bar ul {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-bar ul li {
+    list-style-type: none;
+    padding: 8px 5px 5px 5px;
+    height: 1.5rem;
+    border: 1px solid red;
+}
+
+.nav-bar ul li:hover {
+    cursor: pointer;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+
+}
+
+.icon-code img {
+    height: 14px;
+}
+
+
+
+/* Banner  section */
+
+.banner-section {
+
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+
+}
+
+.banner-section img {
+    max-width: 400px;
+
+}
+
+
+.banner-content h3 {
+    color: #0B0223;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 0px auto;
+}
+
+.banner-content h1 {
+
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 75px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 0px auto;
+
+}
+
+.banner-content p {
+    border: 1px solid tomato;
+    color: #534C64;
+    text-align: left;
+    padding-left: 50px;
+    font-family: Work Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: lowercase;
+
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:567px) {
+
+
+    .nav-bar {
+
+        flex-direction: column;
+        height: auto;
+    }
+
+    .nav-bar ul {
+        flex-direction: column;
+    }
+
+
+    /* Bannner */
+
+    .banner-section {
+        flex-direction: column-reverse;
+    }
+
+    .banner-content{
+        margin-top: 35px;
+    }
+
+
+}
