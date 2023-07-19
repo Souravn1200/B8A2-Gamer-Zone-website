@@ -223,7 +223,7 @@ line-height: normal;
 }
 
 .play-button i {
-    font-size: 48px;
+    font-size: 35px;
     color: #fff;
     
   }
@@ -237,7 +237,7 @@ line-height: normal;
     border: 3px solid #FF42A5;
     cursor: pointer;
     border-radius: 8px;
-    opacity: 0.8;
+    opacity: 0.5;
   }
 
   /* Play section */
@@ -463,6 +463,10 @@ margin:auto;
 
         .online-game-cards-container p {
             text-align: center;
+        }
+
+        .online-game-section h1 {
+            font-size: 26px;
         }
 
 
