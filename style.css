@@ -4,11 +4,6 @@ body {
     font-family: 'Work Sans', sans-serif;
 }
 
-/* , h1, h2, h3, h4, p{
-
-    margin: 0px;
-} */
-
 /* Shared styles */
 
 .btn-primary-pink {
@@ -338,11 +333,13 @@ line-height: normal;
   .genres-section ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    
     list-style-type: none;
     gap: 20px;
     
     
   }
+
 
   .genres-section ul li {
     padding: 20px;
@@ -506,7 +503,7 @@ margin:auto;
 
         
         .genres-section{
-            margin: 140px 0px 0px 2px
+            margin: 140px 0px 0px 12px
         }
 
         .genres-section .genres-btn {
@@ -587,7 +584,7 @@ margin:auto;
         color: #FFF;
     }
 
-
+   
 
 
 
