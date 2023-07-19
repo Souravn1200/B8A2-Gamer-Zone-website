@@ -281,9 +281,72 @@ line-height: normal;
 
 
 
+/* Genres section */
 
 
 
+  .genres-section {
+    margin-top: 140px;
+    width: auto;
+    position: relative;
+    
+  }
+
+  .genres-btn {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    background-color: transparent;
+    cursor: pointer;
+    /* border: 1px solid red; */
+    margin-right: 10px;
+    font-size: 15px;
+    border: none;
+    position: absolute;
+
+
+  }
+  
+
+  .genres-btn:hover {
+
+   
+    border: 1px solid #FF42A5;
+    color: #FF42A5;
+    
+  }
+
+  .genres-btn img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .genres-btn p {
+    margin-left: 5px;
+  }
+  .genres-section ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    list-style-type: none;
+    gap: 20px;
+    
+    
+  }
+
+  .genres-section ul li {
+    padding: 20px;
+    margin-right: 10px;
+  }
+
+
+
+
+
+
+  
+/* Media query for mobile */
 
 
 
@@ -352,4 +415,55 @@ line-height: normal;
             right: 47%;
             max-width: 168px;
         }
+
+        /* Genres section */
+
+        
+        .genres-section{
+            margin: 140px 0px 0px 2px
+        }
+
+        .genres-section .genres-btn {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 8px;
+            padding-bottom: 5px;
+            height: 38px;
+        }
+
+        .genres-section .genres-btn img {
+            width: 20px;
+            height: 20px;
+            transform: translateY(4px);
+        
+        }
+
+        .genres-section .genres-btn p {
+            display: inline-block;
+            margin-left: 0px;
+            margin-left: 4px;
+            place-items: center;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+         .genres-btn {
+            flex-direction: column;
+            
+        } 
+
+        .genres-section ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-left: -69px;
+            gap: 0px;
+        
+          }
+
+
+
+
+
+
+
 }
