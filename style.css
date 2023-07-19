@@ -26,6 +26,18 @@
 }
 
 
+.special-text {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-family: Work Sans;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
 /* Nav styles stars */
 
 .nav-bar {
@@ -142,6 +154,131 @@
 }
 
 
+/* Online game section */
+
+.online-game-section {
+    margin-top: 55px;
+    text-align: center;
+    
+}
+
+
+.online-game-section h1 {
+    font-size: 35px;
+    margin: 0 auto;
+}
+
+.online-game-cards-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+   
+
+}
+
+
+
+.online-game-cards-container img {
+    max-width: 220px;
+    min-height: 220px;
+    box-sizing: border-box;
+}
+
+
+.online-game-cards p {
+
+    width: 210px;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
+
+.online-game-cards {
+
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    
+}
+
+
+
+
+.play-button {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.play-button i {
+    font-size: 48px;
+    color: #fff;
+    
+  }
+
+.online-game-cards:hover .play-button {
+    opacity: 1;
+   
+  }
+
+  .online-game-cards img:hover {
+    border: 3px solid tomato;
+    cursor: pointer;
+    border-radius: 8px;
+    opacity: 0.8;
+  }
+
+  /* Play section */
+
+
+.play-section {
+    
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+    
+}
+
+.play-section h2 {
+    height: 100px;
+    width: 183px;
+    text-align: center;
+    border: 1px solid red;
+    /* padding: 20px 20px 0px 20px; */
+    font-size: 28px;
+}
+
+.play-section p {
+    height: 100px;
+    width: 188px;
+    font-size: 14px;
+    text-align: end;
+    border: 1px solid red;
+    /* padding: 0px 20px 0px 0px; */
+}
+
+
+.play-section-image-container {
+    position: relative;
+}
+
+.play-section-image1 {
+    position: relative;
+    max-width: 500px;
+}
+
+.play-section-image2 {
+    position: absolute;
+    top: 53%;
+    right: 73%;
+    max-width: 280px;
+}
+
 
 
 
@@ -173,6 +310,46 @@
     .banner-content{
         margin-top: 35px;
     }
+    
+    /* Online games section */
+
+    .online-game-cards-container {
+        flex-direction: column;}
+
+        .online-game-cards-container p {
+            text-align: center;
+        }
 
 
+        /* play section */
+        .play-section {
+    
+            flex-direction: column;
+            
+        }
+
+        .play-section p {
+            
+            
+        
+            text-align: center;
+           
+        }
+
+
+        .play-section-image-container {
+            padding: 30px;
+        }
+        
+        .play-section-image1 {
+            max-width: 250px;
+            left: 10%;
+        }
+        
+        .play-section-image2 {
+           
+            top: 58%;
+            right: 47%;
+            max-width: 168px;
+        }
 }
