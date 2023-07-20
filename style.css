@@ -287,64 +287,59 @@ line-height: normal;
 
 /* Genres section */
 
-
-
-  .genres-section {
+.genres-section{
     margin-top: 140px;
-    width: auto;
-    position: relative;
-    
-  }
+}
 
-  .genres-btn {
+
+.genres-section ul{
+    
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+
+    place-items: center center;
+   
+}
+
+.genres-section ul li {
+    list-style-type: none;
+    padding: 20px;
+    margin-right: 10px;
+   
+   
+    
+}
+
+
+ .genres-btn {
     display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
     border-radius: 30px;
     background-color: transparent;
     cursor: pointer;
-    /* border: 1px solid red; */
-    margin-right: 10px;
-    font-size: 15px;
-    border: none;
-    position: absolute;
-
-
-  }
+    border: 1px solid #fff;
   
+    
+ }
 
-  .genres-btn:hover {
+ .genres-btn:hover {
 
    
     border: 1px solid #FF42A5;
     color: #FF42A5;
-    
-  }
+ }
 
-  .genres-btn img {
-    width: 30px;
-    height: 30px;
-  }
-
-  .genres-btn p {
-    margin-left: 5px;
-  }
-  .genres-section ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    .genres-btn img {
+        width: 30px;
+        height: 30px;
+        margin-top: 5px;
+      }
     
-    list-style-type: none;
-    gap: 20px;
-    
-    
-  }
+      .genres-btn p {
+        margin-left: 5px;
+      }
 
 
-  .genres-section ul li {
-    padding: 20px;
-    margin-right: 10px;
-  }
 
 /* Footer sedtion */
 
@@ -425,6 +420,28 @@ margin:auto;
     color: #FFF;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Media query for mobile */
 
 
@@ -501,47 +518,44 @@ margin:auto;
 
         /* Genres section */
 
-        
-        .genres-section{
-            margin: 140px 0px 0px 2px
+        .genres-section {
+            width: auto;
         }
 
-        .genres-section .genres-btn {
-            display: inline-block;
-            vertical-align: middle;
-            margin-right: 8px;
-            padding-bottom: 5px;
-            height: 38px;
-        }
-
-        .genres-section .genres-btn img {
-            width: 20px;
-            height: 20px;
-            transform: translateY(4px);
-        
-        }
-
-        .genres-section .genres-btn p {
-            display: inline-block;
-            margin-left: 0px;
-            margin-left: 4px;
-            place-items: center;
-            font-size: 12px;
-            font-weight: 500;
-        }
-
-         .genres-btn {
-            flex-direction: column;
-            
-        } 
-
-        .genres-section ul {
+        .genres-section ul{
+    
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            margin-left: -69px;
-            gap: 0px;
-        
+            grid-template-columns: repeat(3, 120px);
+            grid-template-rows: repeat(3, 120px);
+           
+            grid-gap: 0px;
+            place-items: center start;
+            padding: 0px;
+            width: auto;
+            justify-content: space-around;
+            
+            
+        }
+
+        .genres-btn img {
+            height: 20px;
+            width: 20px;
+        }
+
+        .genres-btn p {
+            font-size: 12px;
           }
+
+        
+        .genres-section ul li{
+            padding: 0px;
+            margin: 0px;
+        width: 130px;
+            
+           
+        }
+        
+    
 
           /* Footer section */
           .footer-section{
